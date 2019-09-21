@@ -1,0 +1,40 @@
+Objective
+This problem puts your understanding of basics of programming.
+
+Task
+Your teachers are Angry! Every day during the first morning lecture or lab session, many students reach late in the class or lab. After seeing the same pattern of arriving late for the lecture or lab session for initial two weeks of college teacher decides to put up a rule where class will be cancelled if count of students arriving on time in the class or lab will be less than expected threshold then the class will be cancelled. Teachers have also analysed that some of the students have genuine reasons for being late, so when the reason given by students are valid then student is considered to be arrived for lecture or lab session on time Given the arrival time of students in minutes and their reason of late for lecture you need to determine whether the lecture lecture or lab session will be cancelled or not.
+
+Details
+O indicates student arrive on Time or before time whereas L indicate student arrived late.S i the status of all students who arrived for lecture or lab session irrespective of being late or on time. R indicates whether reason of late of all students who reached late is accepted or not by the teacher. A indicates reason is accepted and student is considered on Time and NA indicates student reason is not accepted and student is still marked as late. For students who arrived on time or before time Reason of late will be by default A.
+
+Let's consider N = 8 students who arrived respectively at time S = [O,L,O,L,L,O,O,O] , Three students are late and Five students are on Time. After students provide Reasons of being late and accepted and rejected by teacher, R = [A,NA,A,A,NA,A,A,A]. Now the new status of N students will be Snew = [O,L,O,O,L,O,O,O] where two students are now actually late and Six students are on Time.
+
+teacher decides a cancellation threshold X which denotes class will not be cancelled if students are more than X otherwise class will be cancelled. So if a teacher decides X = 7 then as per Snew class will be cancelled and if the teacher keeps X = 6 then as per Snew class will not be cancelled. Your task is to create a Cancellation function which will return Session Cancelled if conditions are not met and Session Running if the Conditions are met
+
+Input Format
+The first line contains an integer T (total number of test cases)
+Each test case consists of three lines.
+The first line has two space-separated integers, the number of students arrived in lecture or lab and the cancellation threshold set by your teacher.
+The second line contains comma-separated characters describing the arrival times for each student in class or lab.
+The third line contains comma-separated characters describing the acceptance and rejection status finalized by teacher of reasons provided by students for being late.
+Output Format
+For each test case, your function will print the word Session Cancelled if the class is cancelled or Session Running if it is not cancelled.
+Constraints
+1 <= T <= 4
+1 <= N <= 20
+1 <= K <= N
+1 <= N <= 20
+S[i] where i : 1,..N
+Snew[i] where where i : 1,..N
+T[i] where i : 1,..N
+Sample Input:
+2
+8 7
+O,L,O,L,L,O,O,O
+A,NA,A,A,NA,A,A,A
+8 6
+O,L,O,L,L,O,O,O
+A,NA,A,A,NA,A,A,A
+Sample Output:
+Session Cancelled
+Session Running
