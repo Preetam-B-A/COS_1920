@@ -1,0 +1,43 @@
+Objective
+This problem puts your understanding of nested conditional statements to the test.
+
+Task
+Your teacher needs your help! Given the expected and actual submission of dates for lab experiments , create a program that calculates the each experiment pointer and calculate the overall grade.
+
+The pointer structure is as follows:
+
+If the lab experiment is submitted on the expected submission date then allocated pointer is 10
+If the lab experiment is submitted after the expected submission date but still within two days of expected submission date then the allocated pointer is 6
+If the lab experiment is submitted any day after the two days of expected submission date then the allocated pointer is 2
+The grade structure is as follows:
+
+The overall grade will be A when the average pointer is 10
+The overall grade will be B when the average pointer is between 7 to 9
+The overall grade will C when the average pointer is between 5 to 6
+The overall grade will be D when all the above criteria does not satisfy.
+Input Format
+The first line contains an integer T (total number of lab experiments)
+Each lab experiment consists of two lines.
+The first line consists of E (expected submission date) space-separated integers denoting the respective day (D),month (M) and year (Y)
+The second line consists of A (actual submission date) space-separated integers denoting the respective day (D),month (M) and year (Y)
+Output Format
+The output is O (array of two elements) where the first element is AP (average pointer) and second element is G (overall grade)
+
+Constraints
+1 <= D <= 31
+1 <= M <= 12
+2019 <= Y <= 2019
+1 <= T <= 10
+1 <= O <= 2
+1 <= AP <= 10
+A <= G <= D
+Sample Input:
+3
+9 9 2019
+9 9 2019
+10 10 2019
+11 10 2019
+15 11 2019
+19 11 2019
+Sample Output:
+6 C
