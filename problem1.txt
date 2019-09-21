@@ -1,0 +1,23 @@
+Objective
+This problem puts your understanding of simple basics of programming
+
+Task
+You are provided with your academic pointer from semester 1 to semester 8. Pointers are provided between 1 to 100 both including. Your task is to first calculate the mean of all the semester pointers and then provide the factorial of the first digit of the mean value.
+
+Details
+Let's consider student X has pointer from first to eighth semester pointer P = [70,70,80,90,90,80,80,70] and the mean of all the pointer is M = 78.75. Now the factorial value of the first digit 7 of 78.75 is 5040
+
+Input Format
+The only line has eight space-separated integers describing your pointer of all 8 semester
+
+Output Format
+The first line prints the output of mean value The second line prints the output of factorial of the first digit of the mean value
+
+Constraints
+P[i] here i : 1 to 8
+Sample Input:
+70 70 80 90 90 80 80 70
+
+Sample Output:
+78.75 5040
+
